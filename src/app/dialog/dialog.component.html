@@ -1,0 +1,29 @@
+<h1 mat-dialog-title>Add Product Form</h1>
+<div mat-dialog-content>
+    <form [formGroup]="productform" action="">
+        <div class="example-container">
+            <mat-form-field appearance="fill">
+                <mat-label>Name of Mobile</mat-label>
+                <input formControlName="productname" matInput>
+              </mat-form-field>
+              <mat-form-field appearance="fill">
+                <mat-label>Price</mat-label>
+                <input formControlName="price" matInput>
+              </mat-form-field>
+              <mat-form-field appearance="fill">
+                <mat-label>RAM</mat-label>
+                <input formControlName="RAM" matInput>
+              </mat-form-field>
+              <mat-form-field appearance="fill">
+                <mat-label>Storage</mat-label>
+                <input formControlName="storage" matInput>
+              </mat-form-field>
+              <div mat-dialog-actions [align]="'end'">
+                <button mat-raised-button class="add" (click)="addProduct()">{{actionbtn}}</button>&nbsp;
+              <button mat-raised-button  [mat-dialog-close]="true" class="cancel">cancel</button>
+              </div>
+              
+          </div>
+    </form>
+   
+    </div>
